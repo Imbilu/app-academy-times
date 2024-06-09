@@ -1,1 +1,50 @@
-/* Your code here */
+.interests-bar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 0.75fr;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #000000;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.interests-bar__headline {
+    font-weight: bold;
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+
+.interests-bar__story {
+    font-size: 12px;
+}
+
+.interests-bar__text {
+    border-right: 1px solid  #e2e2e2;
+    margin: 2px 2px 0 0;
+    padding-right: 2px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.interests-bar__image {
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interests-bar__image > img {
+    width: 50px;
+    height: 50px;
+}
+
+.interests-bar__big-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.interests-bar__price {
+    display: inline-block;
+}
