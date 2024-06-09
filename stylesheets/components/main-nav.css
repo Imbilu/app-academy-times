@@ -1,1 +1,9 @@
-/* Your code here */
+.main-nav__list {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav__list > li {
+    padding-right: 10px;
+}
