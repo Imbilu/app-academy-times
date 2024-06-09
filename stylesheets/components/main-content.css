@@ -1,1 +1,155 @@
-/* Your code here */
+.articles {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.main-article {
+    display: grid;
+    grid-template-areas:
+        "header1 header1 header1 header1"
+        "header2 header2 header2 video"
+        "header3 header3 header3 video"
+        "list1 list1 list1 video"
+        "list2 list2 list2 video"
+        "comments . . warning"
+        "footer footer footer footer";
+}
+
+.main-header {
+    grid-area: header1;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 0;
+    margin: 3px 0;
+
+}
+
+.article-footer {
+    grid-area: footer;
+}
+
+.main-article > h2 {
+    grid-area: header2;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+.main-article > h3 {
+    grid-area: header3;
+    font-weight: normal;
+    font-size: 12px;
+    color: #e2e2e2;
+}
+
+.byline {
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+}
+
+.list1 {
+    grid-area: list1;
+    font-size: 12px;
+}
+
+.list2 {
+    grid-area: list2;
+    font-size: 12px;
+}
+
+.video {
+    grid-area: video;
+    padding-left: 10px;
+}
+
+.comments {
+    grid-area: comments;
+}
+
+.warning {
+    grid-area: warning;
+}
+
+.article-list {
+    padding-right: 10px;
+    list-style: disc;
+    line-height: 1.5;
+}
+
+.comments {
+    padding: 10px 0;
+    color: #6288a5;
+    font-size: 12px;
+}
+
+.opinions {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: 0.8fr 1fr 1fr;
+    border-left: 1px solid #e2e2e2;
+    margin-left: 10px;
+}
+
+.auth {
+    font-weight: normal;
+    font-size: 10px;
+    color: #999;
+}
+
+.title {
+    font-size: 12px;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.side-article {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 5px;
+}
+
+.side-article h1 {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.side-article h2 {
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.new-office {
+    height: 80px;
+}
+
+.book {
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    padding-left: 5px;
+}
+
+.article-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+}
+
+.bot-article {
+    font-size: 10px;
+    border-right: 1px solid #e2e2e2;
+    padding-left: 5px;
+}
+
+.bot-article h1{
+    font-size: 14px;
+    font-weight: bold;
+}
