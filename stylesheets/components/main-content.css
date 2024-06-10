@@ -10,8 +10,8 @@
         "header1 header1 header1 header1"
         "header2 header2 header2 video"
         "header3 header3 header3 video"
-        "list1 list1 list1 video"
-        "list2 list2 list2 video"
+        "content content content video"
+        "content content content video"
         "comments . . warning"
         "footer footer footer footer";
 }
@@ -52,14 +52,8 @@
     color: #999;
 }
 
-.list1 {
-    grid-area: list1;
-    font-size: 12px;
-}
-
-.list2 {
-    grid-area: list2;
-    font-size: 12px;
+.article-list {
+    grid-area: content;
 }
 
 .video {
@@ -139,12 +133,12 @@
 .article-footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border-bottom: 1px solid #e2e2e2;
-    border-top: 1px solid #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
+    border-top: 1px solid #000000;
 }
 
 .bot-article {
-    font-size: 10px;
+    font-size: 12px;
     border-right: 1px solid #e2e2e2;
     padding-left: 5px;
 }
@@ -152,4 +146,21 @@
 .bot-article h1{
     font-size: 14px;
     font-weight: bold;
+    padding: 3px 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .opinions {
+        display: none;
+    }
+    .articles {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .interests-bar {
+        display: none;
+    }
 }
